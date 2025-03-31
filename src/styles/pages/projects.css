@@ -1,0 +1,76 @@
+.proyectDivBody {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.25em;
+    overflow-y: auto;
+    height: 90%;
+    width: 60%;
+    background-color: azure;
+    border-radius: 1em;
+    margin: 2em;
+    flex-wrap: wrap;
+}
+
+.proyectDivElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 18em;
+    width: 18em;
+    border-radius: 1em;
+    margin: 2em;
+    background-color: #5882FA;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.proyectDivElementImg {
+    height: auto;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    margin: 1em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+img:hover {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1em;
+    transform: scale(1.1);
+}
+
+.proyectDivElementUl {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.proyectDivElementUlLi {
+    margin: 0.50em;
+    padding: 0.10em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.25em;
+}
+
+.proyectDivElementUlLi:hover {
+    margin: 0.50em;
+    padding: 0.10em;
+    background-color: rgb(146, 146, 146);
+    border-radius: 0.25em;
+    transform: scale(1.25);
+}
+
+@media (max-width: 645px) {
+    .experienceDivBody {
+        width: 20em;
+    }
+}

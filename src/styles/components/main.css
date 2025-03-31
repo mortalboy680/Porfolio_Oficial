@@ -1,0 +1,131 @@
+p {
+    width: 40%;
+}
+
+.bodySkills {
+    justify-content: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodySkillsBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #CEF6F5;
+    opacity: 0.4;
+    border-radius: 1em;
+    z-index: 0;
+}
+
+.name {
+    overflow: hidden;
+    white-space: nowrap;
+    color: #000000;
+    width: 0;
+    border-right: 3px solid white;
+    animation: typing 2s steps(30, end) forwards, blink 0.75s step-end infinite;
+    line-height: 1.5;
+    font-size: 5em;
+}
+
+.body {
+    justify-content: center;
+    gap: 1em;
+    overflow: hidden;
+}
+
+.bodySkillsUl {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1em;
+    border-radius: 1em;
+    z-index: 1;
+}
+
+.bodySkillsUlLi:hover {
+    background-color: #A9BCF5;
+    border-radius: 1em;
+}
+
+/* .bodySkillsUlLi{} */
+.bodySkillsUlLiIcons {
+    width: 3em;
+    height: 3em;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: white;
+    }
+}
+
+.infoStudy {
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+.age {
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+.buttomProyects {
+    padding: 0.75em;
+    background-color: transparent;
+    border-radius: 1em;
+    margin: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    user-select: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.buttomProyects:hover {
+    background-color: #A9BCF5;
+}
+
+.linkButtom {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media (max-width: 1100px) {
+    .name {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-right: none;
+        font-size: 8vh;
+    }
+
+    .infoStudy {
+        font-size: 4vh;
+    }
+
+    .bodySkillsUlLiIcons {
+        width: 5vh;
+        height: 5vh;
+    }
+
+}

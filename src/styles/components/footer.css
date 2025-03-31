@@ -1,0 +1,33 @@
+h1 {
+    font-size: 3em;
+}
+
+.footerBar {
+    width: auto;
+    height: 5%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1em 1em 1em 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.footerBarLinksIcon {
+    margin: .2em 0 .2em .2em;
+    transition: transform 0.3s ease-in-out;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.footerBarLinksIcon:hover {
+    transform: translateY(-5px);
+
+}
+
+@media (max-width: 650px) {
+    .footerBar {
+        width: 40%;
+        height: 8%;
+    }
+}

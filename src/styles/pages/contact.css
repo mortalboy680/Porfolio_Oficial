@@ -1,0 +1,83 @@
+.contactDivBody {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    overflow-y: auto;
+    height: auto;
+    width: auto;
+    background-color: azure;
+    border-radius: 1em;
+    margin: 2em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.contactFrom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.contactDivForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input {
+    border-radius: 1em;
+    margin: 0.25em;
+    text-align: center;
+    border: none;
+    padding: .50em;
+    border: black solid 1px;
+    width: 20em;
+}
+
+.textarea {
+    border-radius: 1em;
+    width: 20em;
+    height: 10em;
+    resize: none;
+    text-align: center;
+    border: none;
+    border: black solid 1px;
+
+    padding-top: 1em;
+    margin: 0.25em;
+}
+
+.buttom {
+    border-radius: 1em;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    background-color: #A9BCF5;
+}
+
+.buttom:hover {
+    border-radius: 1em;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    background-color: #2E2EFE;
+}
+
+@media (max-width: 745px) {
+    .proyectDivBody {
+        width: 75%;
+        height: 80%;
+    }
+
+    .contactFrom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+}
