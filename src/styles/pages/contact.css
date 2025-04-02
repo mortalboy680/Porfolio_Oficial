@@ -45,6 +45,12 @@ h2 {
 .footerBarLinksIcon {
     height: 3em;
     width: 3em;
+    transition: all 0.5s;
+}
+
+.footerBarLinksIcon:hover {
+    transform: translateY(-0.3em);
+    box-shadow: 0 0 1em 0 black;
 }
 
 .contactDivFormImg {

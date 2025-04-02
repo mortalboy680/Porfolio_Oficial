@@ -59,6 +59,10 @@
         display: inline-block;
     }
 
+    .navBarUlLink {
+        font-size: 2.5vh;
+    }
+
     i {
         display: none;
     }
