@@ -1,9 +1,9 @@
 .navBar {
     width: auto;
-    background-color: rgb(245, 245, 245);
-    opacity: 100%;
-    padding: .5em;
-    margin: .5em;
+    background-color: #fff;
+    opacity: 1;
+    padding: 1em;
+    margin: 1em;
     border-radius: 1em;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     position: sticky;
@@ -19,7 +19,6 @@
     flex-wrap: wrap;
     gap: 1em;
     background-color: #FAFAFA;
-    border: 1px solid #F2F2F2;
     border-radius: 1em;
 }
 
@@ -33,11 +32,11 @@
     text-decoration: none;
     color: black;
     padding: .2em;
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
 
 .navBarUlLinkLi.active {
-    background-color: #2EFE64;
+    background-color: #A9BCF5;
     border-radius: 1em;
     padding: .2em;
     transition: background-color 0.3s ease-in-out;

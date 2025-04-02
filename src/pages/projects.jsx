@@ -3,33 +3,34 @@ import 'boxicons';
 
 const projects = [
     {
+        // 500x335 img
         title: "Mi página web",
-        image: "./Proyectos/proyecto1.png",
+        image: "/assets/projets/diseno-paginas-web.png",
         technologies: ["javascript", "css3", "git", "react"]
     },
     {
         title: "Otro Proyecto",
-        image: "/Proyectos/proyecto2.png",
+        image: "/assets/projets/diseno-paginas-web.png",
         technologies: ["html5", "sass", "github"]
     },
     {
         title: "Otro Proyecto",
-        image: "/Proyectos/proyecto2.png",
+        image: "/assets/projets/diseno-paginas-web.png",
         technologies: ["html5", "sass", "github"]
     },
     {
         title: "Otro Proyecto",
-        image: "/Proyectos/proyecto2.png",
+        image: "/assets/projets/diseno-paginas-web.png",
         technologies: ["html5", "sass", "github"]
     },
     {
         title: "Otro Proyecto",
-        image: "/Proyectos/proyecto2.png",
+        image: "/assets/projets/diseno-paginas-web.png",
         technologies: ["html5", "sass", "github"]
     },
     {
         title: "Otro Proyecto",
-        image: "/Proyectos/proyecto2.png",
+        image: "/assets/projets/diseno-paginas-web.png",
         technologies: ["html5", "sass", "github"]
     },
     
@@ -43,9 +44,9 @@ function Home() {
             {projects.map((project, index) => (
                 <div key={index} className='proyectDivElement'>
                     <h2>{project.title}</h2>
-                    <div className='proyectDivElementImg'>
+                    <a className='proyectDivElementImg' href='#'>
                         <img src={project.image} alt={project.title} />
-                    </div>
+                    </a>
                     <ul className="proyectDivElementUl">
                         {project.technologies.map((tech, techIndex) => (
                             <li key={techIndex} className='proyectDivElementUlLi'>

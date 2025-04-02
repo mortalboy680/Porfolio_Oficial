@@ -1,57 +1,58 @@
 .proyectDivBody {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 0.25em;
     overflow-y: auto;
-    height: 90%;
+
     width: 60%;
-    background-color: azure;
+    height: 80%;
+
+    margin: 2em auto;
     border-radius: 1em;
-    margin: 2em;
-    flex-wrap: wrap;
+
+    /*background: linear-gradient(to left, #0101DF, #2E2EFE, #5858FA, rgba(129, 159, 247, 0));*/
+    background-color: transparent;
 }
 
 .proyectDivElement {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    height: 18em;
-    width: 18em;
-    border-radius: 1em;
+    height: 22em;
+    width: 20em;
     margin: 2em;
-    background-color: #5882FA;
+    border-radius: 1em;
+    background: linear-gradient(to right, #0101DF, #2E2EFE, #5858FA, rgba(129, 159, 247, 0));
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .proyectDivElementImg {
     height: auto;
-    width: 80%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 1em;
-    margin: 1em;
+    width: 100%;
 }
 
 img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 1em;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease, border-radius 0.3s ease;
 }
 
 img:hover {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 1em;
     transform: scale(1.1);
+    border-radius: 1em;
 }
 
 .proyectDivElementUl {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 1em;
+    margin: 0.1em;
 }
 
 .proyectDivElementUlLi {
@@ -59,6 +60,8 @@ img:hover {
     padding: 0.10em;
     background-color: rgb(255, 255, 255);
     border-radius: 0.25em;
+
+    transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.3s ease;
 }
 
 .proyectDivElementUlLi:hover {
@@ -73,4 +76,24 @@ img:hover {
     .experienceDivBody {
         width: 20em;
     }
+}
+
+
+::-webkit-scrollbar {
+    width: 1em;
+    border-radius: 1em 1em 1em 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 1em 1em 1em 1em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #A9BCF5;
+    border-radius: 1em 1em 1em 1em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #003d75;
 }

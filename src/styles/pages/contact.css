@@ -17,7 +17,7 @@ h2 {
 
 .contactFrom {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 1em;
 }
@@ -25,7 +25,35 @@ h2 {
 .contactDivForm {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacDivFormContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactDivFormUl {
+    display: flex;
+    list-style: none;
+    margin: 2em;
+}
+
+
+.footerBarLinksIcon {
+    height: 3em;
+    width: 3em;
+}
+
+.contactDivFormImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 1em;
 }
 
 .input {
@@ -33,7 +61,7 @@ h2 {
     margin: 0.25em;
     text-align: center;
     border: none;
-    padding: .50em;
+    padding: 0.5em;
     border: black solid 1px;
     width: 20em;
 }
@@ -41,12 +69,11 @@ h2 {
 .textarea {
     border-radius: 1em;
     width: 20em;
-    height: 10em;
+    height: 8em;
     resize: none;
     text-align: center;
     border: none;
     border: black solid 1px;
-
     padding-top: 1em;
     margin: 0.25em;
 }
@@ -55,19 +82,22 @@ h2 {
     border-radius: 1em;
     border: none;
     color: rgb(0, 0, 0);
+    width: 100%;
     padding: 1em;
+    margin-top: 1em;
     background-color: #A9BCF5;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .buttom:hover {
-    border-radius: 1em;
-    border: none;
-    color: rgb(0, 0, 0);
-    padding: 1em;
     background-color: #2E2EFE;
 }
 
 @media (max-width: 745px) {
+    .contactDivBody {
+        padding: 0.1em;
+    }
+
     .proyectDivBody {
         width: 75%;
         height: 80%;
@@ -79,5 +109,4 @@ h2 {
         align-items: center;
         gap: 1em;
     }
-
 }
